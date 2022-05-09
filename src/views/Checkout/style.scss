@@ -1,0 +1,273 @@
+.checkout {
+    position: relative;
+
+    .banner {
+        position: absolute;
+        top: -35%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../../assets/imgs/banner_bg.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (max-width: 768px) {
+            top: -40%;
+            background-size: cover;
+        }
+    }
+
+    .checkout_box {
+        position: relative;
+        z-index: 10;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+        @media (max-width: 768px) {
+            padding-top: 2rem;
+        }
+
+        .box {
+            background-color: #12033e;
+            border-radius: 5px;
+            padding: 3rem;
+            padding-bottom: 8rem;
+            @media (max-width: 768px) {
+                padding: 2rem 0.5rem;
+                .title {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            h5 {
+                font-weight: 700;
+                margin-bottom: 4rem;
+            }
+            h6 {
+                font-weight: 700;
+            }
+
+            .total {
+                height: fit-content;
+                padding: 2rem;
+                border: 1px solid #34285c;
+                border-radius: 7px;
+                @media (max-width: 768px) {
+                    padding: 2rem 1rem;
+                }
+
+                .total_title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 1.5rem;
+                    border-bottom: 1px solid #34285c;
+                }
+
+                .items {
+                    .item {
+                        position: relative;
+                        margin-top: 2.5rem;
+
+                        .top-flag {
+                            position: absolute;
+                            top: 0.5rem;
+                            right: 0.5rem;
+                            max-width: 2.2rem;
+                            @media (max-width: 468px) {
+                                display: none;
+                            }
+                        }
+
+                        .img {
+                            max-width: 100%;
+                            border-radius: 7px;
+                        }
+                        p {
+                            color: #ccc;
+                            font-size: 0.9rem;
+                            margin-bottom: 0.34rem;
+                        }
+                        @media (max-width: 468px) {
+                            b {
+                                font-size: 0.9rem;
+                            }
+                            p,
+                            .price {
+                                font-size: 0.7rem;
+                            }
+                        }
+                        .only-in {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 0.4rem;
+
+                            .flag {
+                                width: 100%;
+                                max-width: 20px;
+                                border-radius: 0px;
+                                margin-right: 0.5rem;
+                            }
+                            .desc {
+                                color: #ccc;
+                                font-size: 0.9rem;
+                                margin: 0;
+                                @media (max-width: 768px) {
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pay {
+                .pay-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+
+                    .dropdown {
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        background: transparent;
+
+                        .dropdown-menu {
+                            background-color: #0e0032;
+                            width: 100%;
+                        }
+                        button {
+                            padding: 0.2rem .5rem;
+                            margin: 0;
+                            background: transparent;
+                            border: 1.5px solid #91134f;
+                            width: 100%;
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown-item {
+                            color: #fff;
+                            padding: 0.5rem;
+
+                            &:hover {
+                                background-color: #c52372;
+                            }
+                        }
+
+                        .select-drop {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background-color: #0e0032;
+                            padding: 0.5rem .2rem;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            @media (max-width: 768px) {
+                                padding: 0.3rem 0.7rem;
+                            }
+
+                            .country {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                width: 100%;
+                                padding-right: .5rem;
+                                .flag {
+                                    max-width: 25px;
+                                    margin-right: .5rem;
+                                    @media (max-width: 768px) {
+                                        max-width: 20px;
+                                    }
+                                }
+                                .pipe {
+                                    border-right: 1px solid #c5237180;
+                                    margin: 1rem;
+                                }
+                                .name {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+
+                    span {
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        color: #f1f1f1;
+                    }
+
+                    .pay-box-inner {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0.35rem 0.5rem;
+                        border: 1.5px solid #91134f;
+                        border-radius: 5px;
+                    }
+
+                    .tax{
+                        font-weight: 600;
+                    }
+
+                    .total-to-pay {
+                        .pay-box-inner {
+                            height: 3rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: 600;
+                        }
+                    }
+
+                    svg {
+                        max-width: 20px;
+                        fill: #fff;
+                        @media (max-width: 768px) {
+                            max-width: 17px;
+                        }
+                    }
+
+                    input {
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        height: 100%;
+                        width: 100%;
+                        color: #ccc;
+                        font-size: 0.87rem;
+                        padding: 0 0.3rem;
+                    }
+
+                    .primary {
+                        width: 100%;
+                        max-width: 5rem;
+                        padding: 0.3rem;
+                        font-size: 0.85rem;
+                    }
+
+                    .no-input {
+                        display: flex;
+                        align-items: center;
+
+                        b {
+                            padding-left: 1rem;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                .pay-order {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}

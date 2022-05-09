@@ -1,0 +1,75 @@
+.navbar_ {
+    padding: 1rem 0;
+
+    .nav-link {
+        color: #fff !important;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding-right: 2rem !important;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: #9272e6 !important;
+        }
+    }
+
+    .nav_ {
+        .nav-cart {
+            width: fit-content;
+            position: relative;
+
+            .badge {
+                position: absolute;
+                top: 0;
+                right: 10px;
+                border-radius: 50%;
+                font-size: 0.7em;
+            }
+        }
+
+        // @media (min-width: 1000px) {
+        //     margin-left: 13%;
+        // }
+    }
+
+    .connect-btn {
+        position: relative;
+        border-radius: 50rem;
+        width: 10.1rem;
+        height: 2.7rem;
+        font-weight: 500;
+        font-size: .8rem;
+        background-image: linear-gradient(to right, #6e0048, #92015f);
+
+        &:nth-child(1){
+            margin-right: 1rem;
+        }
+
+        .logout {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            #metamask{
+                max-width: 19px;
+                margin-left: .5rem;
+                margin-top: -2px;
+            }
+
+            .svg {
+                position: absolute;
+                top: 50%;
+                right: .6rem;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: #190557;
+                border-radius: 50rem;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

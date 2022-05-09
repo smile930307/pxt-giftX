@@ -1,0 +1,175 @@
+.home {
+    .banner {
+        background-image: url(../../assets/imgs/banner_bg.png);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 6rem;
+        @media (max-width: 1200px) {
+            background-size: cover;
+        }
+        @media (max-width: 600px) {
+            padding-bottom: 0rem;
+        }
+    }
+
+    .main {
+        margin-top: 5rem;
+    }
+    .row {
+        .welcome {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (max-width: 600px) {
+                margin-bottom: 3rem !important;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+
+            button {
+                margin-top: 3rem;
+                padding: 0.8rem 4rem;
+                border: none;
+                outline: none;
+                border-radius: 50rem;
+                background-image: linear-gradient(to right, #396fdb, #571da1);
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: 0.2s ease-in-out;
+                box-shadow: 13px 11px 12px 3px rgba(0, 0, 0, 0.32);
+
+                &:hover {
+                    transform: scale(102%);
+                }
+                @media (max-width: 768px) {
+                    margin-top: 1rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        .graphic {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+        }
+    }
+
+    .shop {
+        padding: 7rem 0;
+
+        .shop_gifts {
+            padding: 0 2rem;
+            h1 {
+                font-weight: 600;
+                margin-bottom: 1.5rem;
+            }
+            p,li,b{
+                font-size: 0.85rem;
+            }
+            p {
+                line-height: 1.5rem;
+                color: #ccc;
+            }
+        }
+
+        .offer-in {
+            justify-content: flex-end;
+            padding: 0 2rem;
+
+            .in {
+                border-radius: 7px;
+                min-height: 4rem;
+                background-color: #c52372;
+                padding: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .dropdown{
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    background: transparent;
+
+                    .dropdown-menu{
+                        background-color: #0e0032;
+                    }
+                    button{
+                        padding: 0;
+                        margin: 0;
+                        background: transparent;
+                        border: none;
+                        width: 100%;
+                        &::after{
+                            display: none;
+                        }
+                    }
+
+                    .dropdown-item{
+                        color: #fff;
+
+                        &:hover{
+                            background-color: #c52372;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 0.85rem;
+                }
+
+                .select-drop {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #0e0032;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    .country {
+                        .flag {
+                            max-width: 30px;
+                        }
+                        .pipe {
+                            border-right: 1px solid #c5237180;
+                            margin: 1rem;
+                        }
+                        .name {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cards {
+            margin-top: 3rem;
+            min-height: 50vh;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,234 @@
+.gift-card {
+    position: relative;
+
+    .banner {
+        position: absolute;
+        top: -35%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../../assets/imgs/banner_bg.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (max-width: 1000px) {
+            top: -40%;
+            background-size: cover;
+        }
+    }
+
+    .gift-card-box {
+        position: relative;
+        z-index: 10;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+        @media (max-width: 768px) {
+            padding-top: 2rem;
+        }
+
+        .box {
+            position: relative;
+            background-color: #12033e;
+            border-radius: 5px;
+            padding: 3rem 2rem;
+            @media (max-width: 768px) {
+                padding: 2rem 0.5rem;
+                padding-bottom: 4rem;
+                .title {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            .return {
+                position: absolute;
+                top: -50px;
+                left: 0px;
+                cursor: pointer;
+            }
+
+            h5 {
+                font-weight: 700;
+            }
+
+            .card-col {
+                img {
+                    max-width: 100%;
+                    margin: auto;
+                }
+            }
+
+            .desc-col {
+                padding: 0 0.7rem;
+                display: flex;
+                flex-direction: column;
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    img {
+                        max-width: 3rem;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .top,
+                h6 {
+                    padding-bottom: 0.7rem;
+                }
+                p {
+                    font-size: 0.9rem;
+                    color: #ccc;
+                }
+                button {
+                    margin-top: 1rem;
+                    width: 12rem;
+                    max-width: 100%;
+                }
+
+                .pricing {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1.5rem;
+
+                    span {
+                        font-weight: 600;
+                        font-size: 0.85rem;
+                    }
+
+                    .dropdown {
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        background: transparent;
+
+                        .dropdown-menu {
+                            background-color: #0e0032;
+                        }
+                        button {
+                            padding: 0;
+                            margin: 0;
+                            background: transparent;
+                            border: 1.5px solid #91134f;
+                            width: 100%;
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown-item {
+                            color: #fff;
+
+                            &:hover,
+                            .active {
+                                background-color: #c52372;
+                            }
+                        }
+
+                        .select-drop {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background-color: #0e0032;
+                            padding: 0.4rem 1rem;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            @media (max-width: 768px) {
+                                padding: 0.3rem 0.7rem;
+                            }
+
+                            .country {
+                                .flag {
+                                    max-width: 20px;
+                                    margin-right: 2rem;
+                                    @media (max-width: 768px) {
+                                        max-width: 20px;
+                                        margin-right: 1.5rem;
+                                    }
+                                }
+                                .pipe {
+                                    border-right: 1px solid #c5237180;
+                                    margin: 1rem;
+                                }
+                                .name {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+
+                    .price-you-pay {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        input {
+                            border: 1.5px solid #91134f;
+                            background: transparent;
+                            margin-top: 0.4rem;
+                            color: #ccc;
+                            cursor: default;
+                        }
+                    }
+
+                    .min-max {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 1rem;
+                        .min {
+                            margin-right: 1rem;
+                        }
+                        div {
+                            font-size: 0.9rem;
+                        }
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 1.5rem;
+                }
+
+                .share {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 2rem;
+
+                    span {
+                        color: #ccc;
+                        font-size: 0.85rem;
+                        margin-top: 2px;
+                    }
+
+                    .links {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 0.7rem;
+
+                        .nav-link {
+                            color: #fff !important;
+                            padding: 0 0.6rem !important;
+                            transition: 0.2s ease-in-out;
+
+                            &:hover {
+                                color: #9272e6 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

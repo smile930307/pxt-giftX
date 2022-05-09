@@ -1,0 +1,103 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    min-height: 100vh;
+    background-color: #0e0032;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid #4e0057;
+    outline: none;
+    padding: 0.65rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+.secondary {
+    background-color: transparent;
+    color: #970a66;
+
+    &:hover {
+        background-image: linear-gradient(to right, #92015f, #4e0057);
+        color: #fff;
+    }
+}
+.primary {
+    background-image: linear-gradient(to right, #92015f, #4e0057);
+    color: #fff;
+
+    &:hover {
+        transform: scale(103%);
+    }
+}
+
+.btn-disabled {
+    background-image: linear-gradient(to right, #853b8d, #97589e);
+
+    &:hover {
+        transform: scale(100%);
+        cursor: not-allowed;
+    }
+}
+
+.box-shadow {
+    box-shadow: 13px 11px 12px 3px rgba(0, 0, 0, 0.32);
+}
+
+.box-shadow-sm {
+    box-shadow: 13px 11px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-lg {
+    box-shadow: 9px 6px 21px 8px rgba(0, 0, 0, 0.7);
+}
+
+.react-share__ShareButton {
+    margin: 0 !important;
+    width: fit-content !important;
+}
+
+.select {
+    position: relative;
+    margin-top: 0.4rem;
+
+    select {
+        width: 100%;
+        color: #fff;
+        border: 1px solid #4e0057;
+        cursor: pointer;
+        background: transparent;
+
+        option {
+            color: #4e0057;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+}
+
+
+.error{
+    margin-top: .5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #9e0013;
+}
