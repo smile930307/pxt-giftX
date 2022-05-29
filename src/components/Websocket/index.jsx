@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-useless-concat */
+import { useState, useEffect } from "react";
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 export default function Websocket() {

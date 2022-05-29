@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
 import { Container, Navbar, Nav, Image, Badge } from 'react-bootstrap'
 import Logo from '../../assets/imgs/Logo.png'
@@ -55,7 +56,7 @@ export default function NavBar({ scrollToShop }) {
                             <a
                                 href='https://app.bogged.finance/avax/swap?tokenIn=AVAX&tokenOut=0x9ADCbba4b79eE5285E891512b44706F41F14CAFd'
                                 target='_blank'
-                                className='nav-link'
+                                className='nav-link' rel="noreferrer"
                             >
                                 Buy $PXT
                             </a>
@@ -71,14 +72,14 @@ export default function NavBar({ scrollToShop }) {
                             <a
                                 href='https://twitter.com/projectxfinance?s=21&t=hM6jKhgUaYQbk95XLNm-9A'
                                 target='_blank'
-                                className='nav-link'
+                                className='nav-link' rel="noreferrer"
                             >
                                 <BsTwitter size={20} />
                             </a>
                             <a
                                 href='https://discord.gg/projectxfinance'
                                 target='_blank'
-                                className='nav-link'
+                                className='nav-link' rel="noreferrer"
                             >
                                 <BsDiscord size={20} />
                             </a>
