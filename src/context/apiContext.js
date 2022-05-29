@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { createContext, useReducer, useContext, useState, useEffect } from 'react'
 import { useWallet } from './walletContext'
 import { w3cwebsocket as W3CWebSocket } from "websocket"

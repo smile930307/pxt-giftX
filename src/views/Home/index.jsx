@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useRef, useState } from 'react'
 import graphic from '../../assets/imgs/graphic.png'
 import NavBar from '../../components/NavBar'

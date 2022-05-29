@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react'
 import NavBar from '../../components/NavBar'
 import { Link } from 'react-router-dom'
